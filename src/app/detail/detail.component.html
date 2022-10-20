@@ -1,0 +1,51 @@
+<div class="container">
+    <h2>Product Details</h2>
+
+    <table style="border:1px solid">
+        <tr>
+            <th>Title : </th>
+            <th>{{loaddata.title}}</th>
+            <th rowspan="6"><img src={{loaddata.thumbnail}} height="" width="300"></th>
+        </tr>
+        <tr>
+            <td>Description : </td>
+            <td>{{loaddata.description}}</td>
+        </tr>
+        <tr>
+            <td>Price : </td>
+            <td>{{loaddata.price}}</td>
+        </tr>
+        <tr>
+            <td>Discount Percentage : </td>
+            <td>{{loaddata.discountPercentage}}</td>
+        </tr>
+        <tr>
+            <td>Rating : </td>
+            <td>{{loaddata.rating}}</td>
+        </tr>
+        <tr>
+            <td>Stock : </td>
+            <td>{{loaddata.stock}}</td>
+        </tr>
+        <tr>
+            <td>Brand : </td>
+            <td>{{loaddata.brand}}</td>
+        </tr>
+        <tr>
+            <td>Category : </td>
+            <td>{{loaddata.category}}</td>
+        </tr>
+        <tr>
+            <td>category : </td>
+            <td>{{loaddata.brand}}</td>
+        </tr>
+        <tr>
+            <td colspan=""></td>
+        </tr>
+    </table>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 pb-3 pt-3" *ngFor="let x of images"><img src="{{x}}" width="200" height="200"></div>
+
+        </div>
+    </div>
